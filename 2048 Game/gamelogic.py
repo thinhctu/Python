@@ -5,10 +5,11 @@ def initialize():
     mat =[]
     for i in range(4):
         mat.append([0] * 4)
-    print('\n'.join(['\t'.join([str(cell) for cell in row]) for row in mat]))
     print("Welcome to 2048! Control using WASD")
     #add tile
     fillTwoOrFour(mat)
+    print('\n'.join(['\t'.join([str(cell) for cell in row]) for row in mat]))
+
     #print(mat)
     return mat
 
