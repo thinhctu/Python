@@ -32,13 +32,13 @@ def checkGameStatus(board, max_tile=2048):
         return "PLAY"
 
 def move(direction, board):
-    if direction == "w":
+    if direction == "w" or direction == "W":
         return moveUp(board)
-    if direction == "s":
+    if direction == "s" or direction == "S":
         return moveDown(board)
-    if direction == "a":
+    if direction == "a" or direction == "A":
         return moveLeft(board)
-    if direction == "d":
+    if direction == "d" or direction == "D":
         return moveRight(board)
 
 #fill board with 2 or 4 randomly

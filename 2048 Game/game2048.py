@@ -10,8 +10,8 @@ while(True):
  
     x = input("Press the command : ")
  
-    if(x == 'W' or x == 'w'):
-        mat = gamelogic.moveUp(mat)
+    if(x == 'W' or x == 'w' or x == 'A' or x == 'a' or x == 'S' or x == 's' or x == 'D' or x == 'D'):
+        mat = gamelogic.move(x, mat)
         # get the current state and print it
         status = gamelogic.checkGameStatus(mat)
         print(status)
@@ -22,35 +22,35 @@ while(True):
         else:
             break
  
-    # to move down
-    elif(x == 'S' or x == 's'):
-        mat = gamelogic.moveDown(mat)
-        status = gamelogic.checkGameStatus(mat)
-        print(status)
-        if(status == 'PLAY'):
-            gamelogic.fillTwoOrFour(mat)
-        else:
-            break
+    # # to move down
+    # elif(x == 'S' or x == 's'):
+    #     mat = gamelogic.moveDown(mat)
+    #     status = gamelogic.checkGameStatus(mat)
+    #     print(status)
+    #     if(status == 'PLAY'):
+    #         gamelogic.fillTwoOrFour(mat)
+    #     else:
+    #         break
  
-    # to move left
-    elif(x == 'A' or x == 'a'):
-        mat = gamelogic.moveLeft(mat)
-        status = gamelogic.checkGameStatus(mat)
-        print(status)
-        if(status == 'PLAY'):
-            gamelogic.fillTwoOrFour(mat)
-        else:
-            break
+    # # to move left
+    # elif(x == 'A' or x == 'a'):
+    #     mat = gamelogic.moveLeft(mat)
+    #     status = gamelogic.checkGameStatus(mat)
+    #     print(status)
+    #     if(status == 'PLAY'):
+    #         gamelogic.fillTwoOrFour(mat)
+    #     else:
+    #         break
  
-    # to move right
-    elif(x == 'D' or x == 'd'):
-        mat, flag = gamelogic.moveRight(mat)
-        status = gamelogic.checkGameStatus(mat)
-        print(status)
-        if(status == 'PLAY'):
-            gamelogic.fillTwoOrFour(mat)
-        else:
-            break
+    # # to move right
+    # elif(x == 'D' or x == 'd'):
+    #     mat, flag = gamelogic.moveRight(mat)
+    #     status = gamelogic.checkGameStatus(mat)
+    #     print(status)
+    #     if(status == 'PLAY'):
+    #         gamelogic.fillTwoOrFour(mat)
+    #     else:
+    #         break
     else:
         print("Invalid Key Pressed")
  
