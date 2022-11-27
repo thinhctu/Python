@@ -13,7 +13,7 @@ def initialize():
     #print(mat)
     return mat
 
-def checkGameStatus(board, max_tile=64):
+def checkGameStatus(board, max_tile=2048):
     flat_board = [cell for row in board for cell in row]
     if max_tile in flat_board:
         # game has been won if max_tile value is found
