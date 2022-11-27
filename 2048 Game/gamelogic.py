@@ -31,6 +31,7 @@ def checkGameStatus(board, max_tile=2048):
     else:
         return "PLAY"
 
+#shortening some code by combining the moves
 def move(direction, board):
     if direction == "w" or direction == "W":
         return moveUp(board)
