@@ -21,36 +21,6 @@ while(True):
         # else break the loop
         else:
             break
- 
-    # # to move down
-    # elif(x == 'S' or x == 's'):
-    #     mat = gamelogic.moveDown(mat)
-    #     status = gamelogic.checkGameStatus(mat)
-    #     print(status)
-    #     if(status == 'PLAY'):
-    #         gamelogic.fillTwoOrFour(mat)
-    #     else:
-    #         break
- 
-    # # to move left
-    # elif(x == 'A' or x == 'a'):
-    #     mat = gamelogic.moveLeft(mat)
-    #     status = gamelogic.checkGameStatus(mat)
-    #     print(status)
-    #     if(status == 'PLAY'):
-    #         gamelogic.fillTwoOrFour(mat)
-    #     else:
-    #         break
- 
-    # # to move right
-    # elif(x == 'D' or x == 'd'):
-    #     mat, flag = gamelogic.moveRight(mat)
-    #     status = gamelogic.checkGameStatus(mat)
-    #     print(status)
-    #     if(status == 'PLAY'):
-    #         gamelogic.fillTwoOrFour(mat)
-    #     else:
-    #         break
     else:
         print("Invalid Key Pressed")
  
